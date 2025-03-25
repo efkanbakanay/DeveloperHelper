@@ -8,12 +8,12 @@
     <NoWarn>$(NoWarn);1591;CS8601;CS8603;CS1998;CS8604;CS8600</NoWarn>
     <PackageId>DeveloperHelper</PackageId>
     <Version>1.0.0</Version>
-    <Authors>Your Name</Authors>
-    <Company>Your Company</Company>
+    <Authors>Efkan Bakanay</Authors>
+    <Company>Efkan Bakanay</Company>
     <Description>A comprehensive helper library for developers that includes string extensions, file operations, parsing utilities, formatting helpers, and more.</Description>
     <PackageTags>helper;extensions;utilities;developer-tools</PackageTags>
-    <PackageProjectUrl>https://github.com/yourusername/DeveloperHelper</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/yourusername/DeveloperHelper</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/efkanbakanay/DeveloperHelper</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/efkanbakanay/DeveloperHelper</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Copyright>Copyright © 2024</Copyright>
