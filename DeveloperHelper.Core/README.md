@@ -28,53 +28,6 @@ dotnet add package DeveloperHelper.Database
 dotnet add package DeveloperHelper.Http
 ```
 
-## Requirements
-
-- .NET 6.0 or higher
-- NuGet Package Manager
-
-## Dependencies
-
-- Polly (for HTTP resilience patterns)
-- Serilog (for logging)
-- Microsoft.Data.SqlClient (for database operations)
-- Newtonsoft.Json (for JSON operations)
-- System.Security.Cryptography (for security features)
-
-## Quick Start
-
-1. Add the required packages to your project:
-```bash
-dotnet add package DeveloperHelper.Core
-dotnet add package DeveloperHelper.Security
-```
-
-2. Configure the logger in your application startup:
-```csharp
-using DeveloperHelper.Logging;
-
-public class Program
-{
-    public static void Main(string[] args)
-    {
-        LoggerHelper.Configure(LogLevel.Information);
-        // ... rest of your startup code
-    }
-}
-```
-
-3. Start using the helper methods:
-```csharp
-using DeveloperHelper.Core;
-using DeveloperHelper.Security;
-
-// String operations
-string slug = "Hello World!".ToSlug();
-
-// Security
-string hashedPassword = SecurityHelper.HashPassword("myPassword123");
-```
-
 ## Modules
 
 ### Core

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Authors>Efkan Bakanay</Authors>
+    <Company>Efkan Bakanay</Company>
+    <PackageId>DeveloperHelper.Security</PackageId>
+    <Version>1.1.0</Version>
+    <Description>Security functionality for DeveloperHelper library</Description>
+    <PackageReleaseNotes>
+      - Enhanced encryption with AES-256
+      - Improved password hashing with PBKDF2
+      - Added SQL injection protection
+      - Enhanced XSS protection
+      - Security improvements
+    </PackageReleaseNotes>
+    <PackageTags>developer helper security encryption hashing</PackageTags>
+    <PackageProjectUrl>https://github.com/efkanbakanay/DeveloperHelper</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/efkanbakanay/DeveloperHelper</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Cryptography.KeyDerivation" Version="8.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.3.1" />
+    <PackageReference Include="HtmlSanitizer" Version="8.0.795" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DeveloperHelper.Core\DeveloperHelper.Core.csproj" />
+    <ProjectReference Include="..\DeveloperHelper.Logging\DeveloperHelper.Logging.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>true</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project> 

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Authors>Efkan Bakanay</Authors>
+    <Company>Efkan Bakanay</Company>
+    <PackageId>DeveloperHelper.Logging</PackageId>
+    <Version>1.1.0</Version>
+    <Description>Logging functionality for DeveloperHelper library</Description>
+    <PackageReleaseNotes>
+      - Enhanced logging configuration
+      - Added structured logging
+      - Improved error handling
+      - Added log rotation
+      - Performance improvements
+    </PackageReleaseNotes>
+    <PackageTags>developer helper logging serilog</PackageTags>
+    <PackageProjectUrl>https://github.com/efkanbakanay/DeveloperHelper</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/efkanbakanay/DeveloperHelper</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog" Version="3.1.1" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="5.0.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+    <PackageReference Include="Serilog.Sinks.Debug" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DeveloperHelper.Core\DeveloperHelper.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>true</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project> 
