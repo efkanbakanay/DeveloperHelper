@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591;CS8601;CS8603;CS1998;CS8604;CS8600</NoWarn>
+    <PackageId>DeveloperHelper</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Your Name</Authors>
+    <Company>Your Company</Company>
+    <Description>A comprehensive helper library for developers that includes string extensions, file operations, parsing utilities, formatting helpers, and more.</Description>
+    <PackageTags>helper;extensions;utilities;developer-tools</PackageTags>
+    <PackageProjectUrl>https://github.com/yourusername/DeveloperHelper</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/yourusername/DeveloperHelper</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Copyright>Copyright © 2024</Copyright>
+    <UserSecretsId>developer-helper-secrets</UserSecretsId>
+    <OutputType>Exe</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <UseFullPaths>false</UseFullPaths>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <PublishSingleFile>false</PublishSingleFile>
+    <SelfContained>false</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishReadyToRun>false</PublishReadyToRun>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="8.0.0" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+  </ItemGroup>
+
+  <Target Name="GenerateDocumentation" AfterTargets="Build">
+    <PropertyGroup>
+      <DocumentationToolPath>$(MSBuildProjectDirectory)\bin\$(Configuration)\$(TargetFramework)\win-x64\$(AssemblyName).exe</DocumentationToolPath>
+    </PropertyGroup>
+    <Message Text="Dokümantasyon oluşturuluyor..." Importance="high" />
+    <Message Text="Tool Path: $(DocumentationToolPath)" Importance="high" />
+    <Exec Command="&quot;$(DocumentationToolPath)&quot; --generate-docs" ConsoleToMSBuild="true" />
+  </Target>
+
+</Project>
