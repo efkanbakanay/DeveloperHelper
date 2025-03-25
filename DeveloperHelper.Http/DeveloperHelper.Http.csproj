@@ -8,7 +8,7 @@
     <Authors>Efkan Bakanay</Authors>
     <Company>Efkan Bakanay</Company>
     <PackageId>DeveloperHelper.Http</PackageId>
-    <Version>1.1.0</Version>
+    <Version>1.1.1</Version>
     <Description>HTTP functionality for DeveloperHelper library</Description>
     <PackageReleaseNotes>
       - Enhanced HTTP client configuration

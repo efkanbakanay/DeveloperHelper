@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <PackageId>DeveloperHelper.Database</PackageId>
-    <Version>1.1.0</Version>
+    <Version>1.1.1</Version>
     <Authors>Efkan Bakanay</Authors>
     <Company>Efkan Bakanay</Company>
     <Description>Database features for DeveloperHelper library</Description>

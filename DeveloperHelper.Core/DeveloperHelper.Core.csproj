@@ -8,7 +8,7 @@
     <Authors>Efkan Bakanay</Authors>
     <Company>Efkan Bakanay</Company>
     <PackageId>DeveloperHelper.Core</PackageId>
-    <Version>1.1.0</Version>
+    <Version>1.1.1</Version>
     <Description>Core functionality for DeveloperHelper library</Description>
     <PackageReleaseNotes>
       - Enhanced documentation
